@@ -1,0 +1,344 @@
+$acent-color: #349ca7
+$second-color: #4ecac2
+$title-color: #4c4c4c
+$gray: #70777f
+$white: #edeeee
+
+$break-small: 375px
+$break-medium: 767px
+$break-large: 1200px
+
+body,html
+  width: 100% !important
+  height: 100% !important
+*
+  margin: 0
+  padding: 0
+body
+  text-align: center
+  margin-bottom: 60px
+  font-family: 'Raleway', sans-serif
+  background: url('../images/tile.jpg') repeat
+  background-color: #ffffff
+  -webkit-font-smoothing: antialiased !important
+  text-rendering: optimizelegibility !important
+
+h1, h2, h3, h4, h5
+  font-family: 'Montserrat', sans-serif
+  -webkit-font-smoothing: antialiased
+  text-rendering: optimizelegibility
+  font-weight: bold
+
+.icon-bar
+  background-color: $acent-color !important
+
+.navbar-fixed-top
+  background-color: #191b1d !important
+  transition: background-color 300ms
+
+.navbar-toggle
+  border-color: $acent-color !important
+
+.navbar-inverse
+  -webkit-font-smoothing: antialiased
+  text-rendering: optimizelegibility
+  background-color: transparent
+  position: fixed
+  margin-bottom: 0
+  padding-top: 25px
+  padding-bottom: 25px
+  min-height: 62px
+  border-width: 0px
+  -webkit-box-shadow: 0px 0px
+  box-shadow: 0px 0px
+  -webkit-border-radius: 0
+  -moz-border-radius: 0
+  border-radius: 0
+  z-index: 9999
+  width: 100%
+  @media screen and (max-width: $break-small)
+    position: inherit
+    background-color: #191b1d
+  @media screen and (max-width: $break-medium)
+    position: inherit
+    background-color: #191b1d
+.acent-color
+  color: $second-color
+
+.navbar-header
+  img
+    float: left
+    position: relative
+    vertical-align: middle
+    right: 5px
+    @media screen and (max-width: $break-small)
+      display: block
+      right: -3%
+      width: 44px
+    @media screen and (max-width: $break-medium)
+      right: -10px
+  a
+    position: relative
+    padding-top: 6px
+    font-size: 1.8rem
+    color: #edeeee !important
+    text-transform: uppercase
+    font-family: 'Montserrat', sans-serif
+    font-weight: 300
+    -webkit-font-smoothing: antialiased
+    text-rendering: optimizelegibility
+    span
+      font-size: 1.4rem
+      text-transform: capitalize
+      font-family: 'Raleway', sans-serif
+.navbar-right
+  a
+    color: #edeeee !important
+    text-transform: uppercase
+    font-size: 1.1rem
+    letter-spacing: 2px
+    transition: all 0.3s ease
+    cursor: pointer
+    &:after
+      position: absolute
+      top: 90%
+      left: 0
+      width: 100%
+      height: 2px
+      background: $acent-color
+      content: ''
+      opacity: 0
+      -webkit-transition: opacity 0.3s, -webkit-transform 0.3s
+      -moz-transition: opacity 0.3s, -moz-transform 0.3s
+      transition: opacity 0.3s, transform 0.3s
+      -webkit-transform: translateY(10px)
+      -moz-transform: translateY(10px)
+      transform: translateY(10px)
+    &:hover:after,
+    &:focus:after
+      opacity: 1
+      -webkit-transform: translateY(0px)
+      -moz-transform: translateY(0px)
+      transform: translateY(0px)
+    &:hover
+      color: #fff !important
+
+.myfooter
+  padding: 60px 0
+  width: 100%
+  height: auto
+  background-color: #151515
+  color: $gray
+  a
+    display: inline-block
+    display: none
+
+  i
+    font-size: 4rem
+    color: #ffffff
+    margin-right: 1em
+    padding: 14px 15px
+    border-radius: 100%
+    transition: all 0.3s ease
+    border: 3px solid #ffffff
+    -webkit-transition: all .3s ease
+    -moz-transition: all .3s ease
+    -ms-transition: all .3s ease
+    -o-transition: all .3s ease
+    @media screen and (max-width: $break-small and $break-medium)
+      font-size: 2rem
+    &:hover
+      -webkit-transform: scale(1.25)
+      -moz-transform: scale(1.25)
+      -ms-transform: scale(1.25)
+      -o-transform: scale(1.25)
+      transform: scale(1.25)
+  h2
+    font-weight: 200
+    color: #ffffff
+    margin-bottom: 2em
+.fa-facebook
+  padding: 14px 22px !important
+  @media screen and (max-width: $break-small and $break-medium)
+    padding: 14px 20px !important
+.copyright
+  text-transform: uppercase
+  font-size: 1.2rem
+  font-weight: 100
+  margin-top: 50px
+
+// INDEX -------------------------------------
+.index-body
+  background: linear-gradient(rgba(0,0,0, .7), rgba(0,0,0, .7)), url('../images/background-img.jpg')
+  background-repeat: no-repeat
+  background-position: 50% 50%
+  background-size: cover !important
+  height: 100vh
+  width: 100%
+  text-align: center !important
+  padding-top: 20%
+  -webkit-font-smoothing: antialiased
+  text-rendering: optimizelegibility
+  @media screen and (max-width: $break-small)
+    height: 100vh !important
+  @media screen and (max-width: $break-medium)
+    padding: 8%
+  h1
+    text-transform: uppercase
+    font-size: 6.6rem
+    color: #fff
+    font-weight: 100
+    @media screen and (max-width: $break-small)
+      font-size: 5.6rem
+      text-align: left
+    @media screen and (max-width: $break-medium)
+      font-size: 4.6rem
+    span
+      font-size: 6rem
+      font-weight: bold
+      @media screen and (max-width: $break-small)
+        display: none
+      @media screen and (max-width: $break-medium)
+        font-size: 4rem
+
+.inner-container
+  @media screen and (max-width: $break-small)
+    display: block
+
+  h3
+    font-size: 3rem
+    color: #edeeee
+    font-weight: 500
+    font-family: 'Raleway', sans-serif
+    @media screen and (max-width: $break-small)
+      margin-left: 0
+      margin-bottom: 60px
+      font-size: 2.3rem
+      text-align: left
+    @media screen and (max-width: $break-medium)
+      margin-left: 0
+      margin-bottom: 60px
+      text-align: left
+
+    span
+      font-size: 4rem
+      font-weight: bold
+      @media screen and (max-width: $break-small)
+        font-size: 1rem
+
+// ABOUT ---------------------------
+
+#about-body
+  padding: 10% 0
+  clear: both
+  img
+    width: 245px
+    height: 230px
+    border: 4px solid #91979d
+    display: block
+    margin-left: 27%
+    @media screen and (max-width: $break-small and $break-medium)
+      margin: auto
+      height: auto
+      margin-bottom: 5%
+  h1
+    color: #191b1d
+    position: relative
+  hr
+    text-align: center
+    width: 50px
+    border: 2px solid $acent-color
+  p
+    color: $gray
+    text-align: justify
+    font-size: 1.8rem
+
+  a
+    text-decoration: none
+    color: $acent-color
+.name-tag
+  margin-left: 33%
+  margin-bottom: 0
+  margin-top: 2%
+  text-transform: uppercase
+  @media screen and (max-width: $break-small)
+    width: 100%
+    margin: 0 auto
+    text-align: center !important
+    height: auto
+  @media screen and (max-width: $break-medium)
+    width: 100%
+    margin: 0 auto
+    text-align: center !important
+.sub-title
+  margin-left: 35.5%
+  font-size: 1.2rem !important
+  @media screen and (max-width: $break-small)
+    width: 100%
+    margin: auto
+    height: auto
+  @media screen and (max-width: $break-medium)
+    width: 90%
+    margin: auto
+    text-align: center !important
+
+// PROJECTS-BODY---------------------------
+#projects-section
+  overflow: hidden !important
+.black-container
+  padding: 70px 0
+  width: 100%
+  color: #fff
+  background-color: #191b1d
+.col-sm-4
+  padding: 0
+  background: linear-gradient(rgba(0,0,0, .8), rgba(0,0,0, .8))
+  overflow: hidden !important
+  h2
+    font-weight: 200
+  h1,p
+    margin: 0
+    color: #fff
+.hover-text
+  overflow: hidden !important
+  cursor: pointer
+  padding: 100px 30px 100px 30px
+  opacity: .4
+  -webkit-transition: all 1s ease
+  -moz-transition: all 1s ease
+  -ms-transition: all 1s ease
+  -o-transition: all 1s ease
+  @media screen and (max-width: $break-small)
+    opacity: 1
+  @media screen and (max-width: $break-medium)
+    opacity: 1
+
+  &:hover
+    opacity: .9
+    -webkit-transform: scale(1.10)
+    -moz-transform: scale(1.10)
+    -ms-transform: scale(1.10)
+    -o-transform: scale(1.10)
+    transform: scale(1.10)
+  p
+    font-size: 1.4em
+.overlay
+  opacity: .4
+  height: 100%
+  width: 100%
+  z-index: 1000 !important
+  transition: all 1s ease
+  @media screen and (max-width: $break-small)
+    opacity: 1
+  @media screen and (max-width: $break-medium)
+    opacity: 1
+  &:hover
+    opacity: .9
+
+
+
+
+.blue-overlay
+  background-color: #8f9394
+.gray-overlay
+  background-color: $acent-color
