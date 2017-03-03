@@ -28,6 +28,13 @@ h1, h2, h3, h4, h5
   text-rendering: optimizelegibility
   font-weight: bold
 
+
+header
+  background: linear-gradient(rgba(0,0,0, .7), rgba(0,0,0, .7)), url('../images/background-img.jpg')
+  background-size: cover
+  background-position: center
+  height: 100vh
+
 .navbar-collapse
   z-index: 1 !important
 
@@ -40,12 +47,17 @@ h1, h2, h3, h4, h5
 
 .back-to-top
   position: fixed
+  display: inline-block
   bottom: 20px
   right: 20px
-  font-size: 30px
+  font-size: 27px
   background-color: $acent-color
   color: #ffffff
-  padding: 6px 15px
+  height: 50px
+  width: 50px
+  text-align: center
+  padding: 5px
+  border-radius: 50%
   display: none
   transition: background-color 0.3s
   &:hover
@@ -185,14 +197,13 @@ h1, h2, h3, h4, h5
 
 // INDEX -------------------------------------
 .index-body
-  background: linear-gradient(rgba(0,0,0, .7), rgba(0,0,0, .7)), url('../images/background-img.jpg')
-  background-repeat: no-repeat
-  background-position:  center
-  background-size: cover !important
-  height: 100vh
-  background-attachment: fixed
-  text-align: center !important
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
   -webkit-font-smoothing: antialiased
+  width: 100%
+  padding: 0 4%
   text-rendering: optimizelegibility
   h1
     text-transform: uppercase
@@ -215,14 +226,7 @@ h1, h2, h3, h4, h5
       @media screen and (max-width: $break-medium)
         font-size: 4rem
 
-.inner-container
-  position: absolute
-  width: 100%
-  top: 50%
-  left: 50%
-  transform: translate(-50%, -50%)
-  @media screen and (max-width: $break-small)
-    z-index: 0 !important
+
 
   h3
     font-size: 3rem
