@@ -23,13 +23,14 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
   </head>
 <body>
 
 <header>
 
 
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
    <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -39,11 +40,10 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <img class="responsive-img" src="images/new4.png" width="50px" alt="">
+        <img class="responsive-img" src="images/main-logo.png" width="50px" alt="">
         <a class="navbar-brand" href="index.html">
           Marlon Martinez
-          <br>
-          <span>Junior <span class="acent-color">web</span> Developer</span>
+        
         </a>
       </div>
 
@@ -53,77 +53,161 @@
           <li><a class="home">Home <span class="sr-only">(current)</span></a></li>
           <li><a class="about">About</a></li>
           <li><a class="projects">My Projects</a></li>
-          <li><a class="experience">Experience</a></li>
+          <li><a class="experience">Contact</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
 
   <div class="index-body">
-      <h3>Hello my name is Marlon, and I love building responsive websites<span class="acent-color">.</span>  </h3>
-      <h1><span class="acent-color">< </span> Front-End Web Developer<span class="acent-color tag"> /></span></h1>
+      <h3 class="animated">Hello my name is Marlon, and I love building responsive websites<span class="acent-color">.</span>  </h3>
+      <h1 class="animated"><span class="acent-color">< </span> Front-End Web Developer<span class="acent-color tag"> /></span></h1>
   </div>
 </header>
 
   <div id="about-body">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <img src="  images/marlon.jpg" class="img-circle" alt="marlon-martinez">
-          <p class="lead name-tag">Marlon Martinez</p>
-          <p class="sub-title">Front-End Web Developer</p>
-        </div>
-        <div class="col-sm-6">
-          <h1>About Me<span class="acent-color">.</span></h1>
+      <h1>About Me<span class="acent-color">.</span></h1>
+          <img style="opacity: 0" src="images/marlon.jpg" class="img-circle marlon-img animated" alt="marlon-martinez">
 
-          <p class="lead">I have over 2yr of experience in the sales industry,  but I longed for a change in my life and career, that's the reason I decide to join <i><a href="https://www.ironhack.com/" target="_blank">IronHack</a></i>, Learning faster and developing new skills fascinates me. That's why I decided to become a Front-end web developer<span class="acent-color">.</span></p>
-        </div>
-      </div>
+          <p class="lead">Hi my name is <b>Marlon Martinez</b> and I'm a web developer. I have over 3 years of experience in the sales industry. However, my passion for technology and design led me to become a front-end web developer, that’s why I chose <i>IronHack’s</i> Web Development Bootcamp which has now expanded my possibilities of creating new responsive, beautiful and dynamic webapps<span class="acent-color">.</span></p>
+          <p class="lead">Here are some of the technologies I've worked with:</p>
+
+          <div class="row">
+            <div class="col-sm-3 projects-container">
+              <div class="card technologies">
+                <img  style="opacity: 0" class="card-img-top animated left-2" src="images/html.png" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">HTML</h4>
+                  <p class="card-text">The base and structure for websites and applications.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 projects-container">
+              <div class="card technologies">
+                <img  style="opacity: 0" class="card-img-top animated left-2" src="images/css.png" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">CSS</h4>
+                  <p class="card-text">Plain css and also populars frameworks and compilers.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 projects-container">
+              <div class="card technologies">
+                <img  style="opacity: 0" class="card-img-top animated right-2" src="images/javascript.png" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">JavaScript</h4>
+                  <p class="card-text">One of the most populars language.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 projects-container">
+              <div class="card technologies">
+                <img  style="opacity: 0" class="card-img-top animated right-2" src="images/jquery.png" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">jQuery</h4>
+                  <p class="card-text">Fast and concise javaScript library.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3 projects-container">
+              <div class="card technologies animated">
+                <img style="opacity: 0" class="card-img-top animated left-2nd" src="images/angular.png" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Angular 2</h4>
+                  <p class="card-text">My favorite front-end javaScript framework for createing web applications.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 projects-container">
+              <div class="card technologies animated">
+                <img style="opacity: 0" class="card-img-top animated left-2nd" src="images/bootstrap.png" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Bootstrap</h4>
+                  <p class="card-text">My favorite, and one of the most popular css framewors.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 projects-container">
+              <div class="card technologies small-img animated">
+                <img style="opacity: 0" class="card-img-top animated right-2nd" src="images/wordpress.png" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Wordpress</h4>
+                  <p class="card-text">Simple web publishing sofware for creating websites and blogs.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 projects-container">
+              <div class="card technologies small-img animated">
+                <img style="opacity: 0" class="card-img-top animated right-2nd" src="images/nodejs.png" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">NodeJS</h4>
+                  <p class="card-text">One of the populars server-side plarform</p>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
   </div>
 
 
-  <section id="projects-section">
-    <div class="black-container">
-      <h2>Recent projects I have designed &amp; developed. </h2>
+  <section id="next-section">
+    <div class="container">
+
+      <h2>What's next</h2>
+      <p class="lead">Technology will continue to evolve every year my job is to Keep learning and growing new set of skill each day.</p>
     </div>
-    <div class="projects">
-      <div class="row">
-          <div class="col-sm-4">
-            <div class="overlay gray-overlay">
-              <div class="hover-text">
-                <h1>Dice Race</h1>
-                <p>This is a simple game made to showcase the different technologies that I have learned over the past two weeks at IronHack Some of the new skills that I've learned and used in the game are: JavaScript, HTML, CSS, jQuery and bootstrap</p>
-              </div>
-            </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="overlay blue-overlay">
-            <div class="hover-text">
-              <h1>Coming Soon!</h1>
-            </div>
+  </section>
+
+<section id="projects-section">
+  <h1>My Work<span class="acent-color">.</span></h1>
+  <hr style="border: 2px solid #349ca7; width: 5%; margin-left: 47%; margin-bottom: 0">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 projects-container">
+        <div class="card">
+          <img style="opacity: 0" class="card-img-top animated my-work" src="images/logo.png" alt="Card image cap">
+          <div class="card-block">
+            <p class="card-text">Simple board game. Technologies: JavaScript, HTML, CSS, jQuery, Sass and Bootstrap.</p>
+            <a href="https://mjmartinez13.github.io/DiceRace/" class="checkitout-link"  target="_blank">Check it Out <i class="fa fa-angle-right" aria-hidden="true"></i></a>
           </div>
         </div>
-        <div class="col-sm-4">
-          <div class="overlay">
-            <div class="hover-text">
-              <h1>Coming Soon!</h1>
-            </div>
+      </div>
+      <div class="col-sm-4 projects-container">
+        <div class="card">
+          <img style="padding-bottom: 67px; opacity: 0" class="card-img-top animated my-work" src="images/logo2.png" alt="birthdaygenie logo">
+          <div class="card-block">
+            <p class="card-text">A Birthday-list webApp. Technologies: NodeJS, MongoDB, Express, Passport, HTML, CSS, jQuery and Bootstrap.</p>
+            <a href="https://birthdaygenie.herokuapp.com" class="checkitout-link"  target="_blank">Check it Out <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 projects-container">
+        <div class="card">
+          <img  style="padding-bottom: 48px; opacity: 0" class="card-img-top animated my-work" src="images/github.png" alt="Card image cap">
+          <div class="card-block">
+            <p class="card-text">Please take a look at my Github profile, where I've uploaded the source code of many others projects that I've worked on.</p>
+            <a href="https://github.com/mjmartinez13" class="checkitout-link"  target="_blank">Check it Out <i class="fa fa-angle-right" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+
 
   <a href="" class="back-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
 
   <footer class="myfooter">
     <div class="container">
       <h2>Follow me on facebook, twitter or linkedIn</h2>
-      <a class="social" href="https://www.facebook.com/profile.php?id=100013249350704" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-      <a class="social" href="https://github.com/mjmartinez13" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-      <a class="social" href="https://twitter.com/mjmartinezz13?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-      <a class="social" href="https://www.linkedin.com/in/marlon-martinez/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <a class="social animated" href="https://www.facebook.com/profile.php?id=100013249350704" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a class="social animated" href="https://github.com/mjmartinez13" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+      <a class="social animated" href="https://twitter.com/mjmartinezz13?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a class="social animated" href="https://www.linkedin.com/in/marlon-martinez/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
       <h4 class="copyright">&copy; 2017 Marlon Martinez</h4>
     </div>
   </footer>
