@@ -40,9 +40,9 @@ $(document).ready( () => {
           scrollTop: $("#projects-section").offset().top},
           'slow');
   });
-  $('.experience').click(function() {
+  $('.contact').click(function() {
       $('html,body').animate({
-          scrollTop: $("#experience-section").offset().top},
+          scrollTop: $(".myfooter").offset().top},
           'slow');
   });
 

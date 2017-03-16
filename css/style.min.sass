@@ -164,30 +164,31 @@ header
   a
     display: inline-block
     opacity: 0
-  i
-    font-size: 4rem
-    color: #ffffff
-    margin-right: 1em
-    padding: 14px 15px
-    border-radius: 100%
-    transition: all 0.3s ease
-    border: 3px solid #ffffff
-    -webkit-transition: all .3s ease
-    -moz-transition: all .3s ease
-    -ms-transition: all .3s ease
-    -o-transition: all .3s ease
-    @media screen and (max-width: $break-small and $break-medium)
-      font-size: 2rem
-    &:hover
-      -webkit-transform: scale(1.25)
-      -moz-transform: scale(1.25)
-      -ms-transform: scale(1.25)
-      -o-transform: scale(1.25)
-      transform: scale(1.25)
   h2
     font-weight: 200
     color: #ffffff
     margin-bottom: 2em
+
+.social-icon
+  font-size: 4rem !important
+  color: #ffffff
+  margin-right: 1em
+  padding: 14px 15px
+  border-radius: 100%
+  transition: all 0.3s ease
+  border: 3px solid #ffffff
+  -webkit-transition: all .3s ease
+  -moz-transition: all .3s ease
+  -ms-transition: all .3s ease
+  -o-transition: all .3s ease
+  @media screen and (max-width: $break-small and $break-medium)
+    font-size: 2rem
+  &:hover
+    -webkit-transform: scale(1.25)
+    -moz-transform: scale(1.25)
+    -ms-transform: scale(1.25)
+    -o-transform: scale(1.25)
+    transform: scale(1.25)
 .fa-facebook
   padding: 14px 22px !important
   @media screen and (max-width: $break-small and $break-medium)
@@ -330,3 +331,13 @@ header
   font-weight: 600
   &:hover
     text-decoration: none
+
+.contact-section
+  height: 20vh
+  display: flex
+  align-items: center
+  color: #fff
+  i
+    margin-right: 10px
+  p
+    font-size: 2rem
